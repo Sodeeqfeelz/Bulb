@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body{
+                background-image: url(images/light\ bg.avif);
+                /* background-image: url(images/light\ bg1.jpg); */
+                background-size: cover;
+            }
+            img{
+                margin: 10px;
+            }
+            button {
+                border: 0px;
+                border-radius: 20px;
+                width: 10vw;
+                padding: 12px;
+                text-align: center
+            }
+            #button1{
+                margin-left: 35vw;
+                margin-top: 10px;
+                background-color: yellow;
+            }
+            #button2{
+                margin-left: 50px;
+                background-color: red;
+            }
+        </style>
+        
+    </head>
+    <body style="background-color: grey;">
+        <div id="disp"></div>
+        <div id="disp1"></div>
+        <button id="button1" onclick="on()">On</button>
+        <button id="button2" onclick="off()">Off</button>
+        <!-- <button onclick="morning()">Morning</button>
+        <button onclick="afternoon()">Afternoon</button>
+        <button onclick="night()">Night</button> -->
+        
+        <script>
+            disp.innerHTML = `
+                <img src="images/snipe_1-removebg-preview.png" alt="">
+                <img src="images/snipe_1-removebg-preview.png" alt="">
+                <img src="images/snipe_1-removebg-preview.png" alt="">
+                <img src="images/snipe_1-removebg-preview.png" alt="">
+                <img src="images/snipe_1-removebg-preview.png" alt="">
+                <img src="images/snipe_1-removebg-preview.png" alt="">
+                <img src="images/snipe_1-removebg-preview.png" alt="">
+            `
+            disp1.innerHTML = `
+                <img src="images/snipe_1-removebg-preview.png" alt="">
+                <img src="images/snipe_1-removebg-preview.png" alt="">
+                <img src="images/snipe_1-removebg-preview.png" alt="">
+                <img src="images/snipe_1-removebg-preview.png" alt="">
+                <img src="images/snipe_1-removebg-preview.png" alt="">
+                <img src="images/snipe_1-removebg-preview.png" alt="">
+                <img src="images/snipe_1-removebg-preview.png" alt="">
+            `
+            const on =()=>{
+                disp.innerHTML =`
+                    <img src="images/snipe-removebg-preview.png" alt="">
+                    <img src="images/snipe-removebg-preview.png" alt="">
+                    <img src="images/snipe-removebg-preview.png" alt="">
+                    <img src="images/snipe-removebg-preview.png" alt="">
+                    <img src="images/snipe-removebg-preview.png" alt="">
+                    <img src="images/snipe-removebg-preview.png" alt="">
+                    <img src="images/snipe-removebg-preview.png" alt="">
+                `
+                disp1.innerHTML =`
+                    <img src="images/snipe-removebg-preview.png" alt="">
+                    <img src="images/snipe-removebg-preview.png" alt="">
+                    <img src="images/snipe-removebg-preview.png" alt="">
+                    <img src="images/snipe-removebg-preview.png" alt="">
+                    <img src="images/snipe-removebg-preview.png" alt="">
+                    <img src="images/snipe-removebg-preview.png" alt="">
+                    <img src="images/snipe-removebg-preview.png" alt="">
+                `
+            }
+            const off =()=>{
+                disp.innerHTML =`
+                <img src="images/snipe_1-removebg-preview.png" alt="">
+                <img src="images/snipe_1-removebg-preview.png" alt="">
+                <img src="images/snipe_1-removebg-preview.png" alt="">
+                <img src="images/snipe_1-removebg-preview.png" alt="">
+                <img src="images/snipe_1-removebg-preview.png" alt="">
+                <img src="images/snipe_1-removebg-preview.png" alt="">
+                <img src="images/snipe_1-removebg-preview.png" alt="">
+                `
+                disp1.innerHTML =`
+                <img src="images/snipe_1-removebg-preview.png" alt="">
+                <img src="images/snipe_1-removebg-preview.png" alt="">
+                <img src="images/snipe_1-removebg-preview.png" alt="">
+                <img src="images/snipe_1-removebg-preview.png" alt="">
+                <img src="images/snipe_1-removebg-preview.png" alt="">
+                <img src="images/snipe_1-removebg-preview.png" alt="">
+                <img src="images/snipe_1-removebg-preview.png" alt="">
+                `
+            }
+        </script>
+    </body>
+</html>
